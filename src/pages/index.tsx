@@ -84,7 +84,7 @@ const App: NextPage<IAppComponentProps> = ({operators}) => {
 
 }
 App.getInitialProps = async ctx => {
-    const res = await fetch('http://localhost:3000/operators-list.json')
+    const res = await fetch('mobile-payment-v2-7z3iomf5u.now.sh/operators-list.json')
     const json = await res.json()
     return {operators: json.operators}
 }

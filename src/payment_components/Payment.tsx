@@ -10,7 +10,6 @@ interface IPayment {
     operator: string,
 
     changeCurrentPage(page: string): void
-
     validateCheck(operator: string): boolean
 }
 
