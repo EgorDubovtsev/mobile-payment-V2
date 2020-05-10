@@ -1,7 +1,7 @@
 import React from 'react';
-import SimList from "./SimList";
+import SimList from "../operators_components/SimList";
 import styled from "styled-components";
-import IOperator from "./IOperator";
+import IOperator from "../operators_components/IOperator";
 
 interface IOperators {
     choiceMade(simName: string): void

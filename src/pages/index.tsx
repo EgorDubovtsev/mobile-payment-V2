@@ -1,6 +1,6 @@
 import React from 'react';
-import Payment from "../payment_components/Payment";
-import Operators from "../operators_components/Operators";
+import Payment from "./Payment";
+import Operators from "./Operators";
 import styled, {createGlobalStyle} from "styled-components";
 import Paginator from "../Paginator";
 import Background from "../operators_components/Background";
