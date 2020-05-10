@@ -1,6 +1,6 @@
 import React from "react";
-import Sim from "./Sim";
-import IOperator from "./IOperator";
+import Sim from "../operators_components/Sim";
+import IOperator from "../operators_components/IOperator";
 import styled from "styled-components";
 
 interface ISimList {

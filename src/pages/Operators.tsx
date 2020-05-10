@@ -1,5 +1,5 @@
 import React from 'react';
-import SimList from "../operators_components/SimList";
+import SimList from "./SimList";
 import styled from "styled-components";
 import IOperator from "../operators_components/IOperator";
 
