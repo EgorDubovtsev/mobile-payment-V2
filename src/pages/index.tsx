@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
-import Payment from "./Payment";
-import Operators from "./Operators";
+import Payment from "../payment_components/Payment";
+import Operators from "../operators_components/Operators";
 import styled, {createGlobalStyle} from "styled-components";
-import Paginator from "./Paginator";
+import Paginator from "../Paginator";
 import Background from "../operators_components/Background";
 import IOperator from "../operators_components/IOperator";
 import Head from 'next/head';
@@ -43,7 +43,7 @@ interface IAppComponentProps {
 const App: NextPage<IAppComponentProps> = ({operators}) => {
 
     const [operator, setOperator] = React.useState<string>("");
-    const [operatorsList, setOperators] = React.useState<IOperator[]>(operators||[{simName:""}]);
+    const [operatorsList, setOperators] = React.useState<IOperator[]>(operators || [{simName: "No operators"}]);
     const [currentPage, setCurrentPage] = React.useState<string>("");
 
 
@@ -86,7 +86,7 @@ const App: NextPage<IAppComponentProps> = ({operators}) => {
 App.getInitialProps = async ctx => {
     const res = await fetch('http://localhost:3000/operators-list.json')
     const json = await res.json()
-    return { operators: json.operators }
+    return {operators: json.operators}
 }
 
 
