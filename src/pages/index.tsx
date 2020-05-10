@@ -43,7 +43,7 @@ interface IAppComponentProps {
 const App: NextPage<IAppComponentProps> = ({operators}) => {
 
     const [operator, setOperator] = React.useState<string>("");
-    const [operatorsList, setOperators] = React.useState<IOperator[]>(operators!);
+    const [operatorsList, setOperators] = React.useState<IOperator[]>(operators||[{simName:""}]);
     const [currentPage, setCurrentPage] = React.useState<string>("");
 
 
