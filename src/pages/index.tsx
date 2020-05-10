@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Payment from "../payment_components/Payment";
 import Operators from "../operators_components/Operators";
 import styled, {createGlobalStyle} from "styled-components";
@@ -84,7 +84,7 @@ const App: NextPage<IAppComponentProps> = ({operators}) => {
 
 }
 App.getInitialProps = async ctx => {
-    const res = await fetch('mobile-payment-v2.now.sh/operators-list.json')
+    const res = await fetch('https://mobile-payment-v2-4eccwmq2k.now.sh/operators-list.json')
     const json = await res.json()
     return {operators: json.operators}
 }
